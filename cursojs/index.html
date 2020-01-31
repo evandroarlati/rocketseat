@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+
+
+
+        <script>
+            //javascript
+            console.log('Hello World');
+            //Variaveis
+            //Não precisa definir o tipo de variavel
+            var nome = 'Evandro'; 
+            var idade = 29;
+            var peso = 65.5;
+            var humano = true;
+
+            var alunos = ['Diego', 'Gabriel', 'Lucas'];
+            var aluno = {
+                nome: 'Evandro', 
+                idade: 29,
+                peso: 65.5,
+                humano: true
+            };
+
+            console.log(alunos[1]);
+            console.log(aluno.nome);
+
+            //Operações matematicas
+            var x =10, y = 5;
+            var soma = x+y;
+            var modulo = x % y;
+            x +=9; //x = x +9
+            
+            console.log(soma);
+            console.log(modulo);
+            console.log(x);
+
+            //Funções
+            function retornaSexo(sexo){
+                //M, F
+                //Masculino, Feminino
+
+                //== verifica se valores são iguais
+                //=== verifica se valores e tipo são iguais
+                if (sexo == 'M'){
+                  return 'Maculino';   
+                } else if (sexo == 'F') { 
+                  return 'Feminino';  
+                } else{
+                  return 'Outro';
+                }             
+            }
+
+            var resultado = retornaSexo('F')
+            console.log(resultado);
+        </script>
+    </body>
+</html>
